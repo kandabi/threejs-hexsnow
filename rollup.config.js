@@ -42,10 +42,10 @@ export default {
       production && terser(),
       !production && livereload(),
       !production &&
-      serve({
-         contentBase: 'dist/dev',
-         port: 3000,
-         open: true,
-      }),
+          serve({
+             contentBase: 'dist/dev',
+             port: 3000,
+             open: true,
+          }),
    ],
 };

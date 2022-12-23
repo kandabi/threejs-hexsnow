@@ -32,6 +32,8 @@ a {
 }
 
 .ui {
+   transition: opacity 2s ease-in-out;
+   opacity: 1 !important;
    z-index: 1;
 
    .watermark-container {
