@@ -34,7 +34,6 @@ export class App {
       this.renderer.setSize(window.innerWidth, window.innerHeight);
       document.body.appendChild(this.renderer.domElement);
       window.addEventListener('resize', this.onWindowResize.bind(this), false);
-      this.initUI();
       this.initDebugUI();
       initAudio(this.renderer.domElement);
       this.clock = new THREE.Clock();
@@ -52,12 +51,6 @@ export class App {
       this.controls.update();
       this.world.update(this.clock.getElapsedTime());
       this.renderer.render(this.scene, this.camera);
-   }
-
-   private initUI() {
-      // const uiElement = document.createElement('div');
-      // uiElement.innerHTML = UI;
-      // document.body.appendChild(uiElement);
    }
 
    private initDebugUI() {
